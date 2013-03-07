@@ -1,4 +1,3 @@
-
 **Homepage**:       [http://jeffduckett.com](http://jeffduckett.com)
 
 **Git**:            [http://github.com/jduckett01/duck_test](http://github.com/jduckett01/duck_test)
