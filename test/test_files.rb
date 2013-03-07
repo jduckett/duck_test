@@ -60,7 +60,7 @@ class TestFiles
       self.dir_list.each {|dir| FileUtils.mkdir_p dir}
       FileUtils.touch self.file_list
       puts "\r\n\r\n"
-      puts self.file_list
+      #puts self.file_list
       puts "\r\n\r\nThe above files have been created.\r\n\r\n"
       @@setup_complete = true
     end
