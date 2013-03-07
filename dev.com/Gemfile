@@ -1,0 +1,27 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.2.11'
+
+gem 'sqlite3'
+gem 'execjs'
+gem 'therubyracer'
+
+#gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'jquery-rails'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier'
+end
+
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+  gem 'duck_test', :path => File.expand_path("#{File.dirname(__FILE__)}/../")
+  gem 'minitest'
+  gem 'rb-inotify'
+  gem 'rspec'
+  gem 'rspec-rails'
+end

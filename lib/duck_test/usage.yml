@@ -1,0 +1,114 @@
+---
+:usage: ! '
+
+Commands:
+
+The following commands do not require arguments.
+
+duck.autorun       - Toggles autorun on/off
+
+duck.blacklist     - Lists all of the files that have been blacklisted
+
+duck.history       - Lists all of the non-runnable and runnable files that have been loaded into memory during the current session
+
+duck.info          - Displays information about the current loaded testing framework
+
+duck.maps          - Lists mappings of non-runnable to runnable files
+
+duck.runall        - Loads all runnable test files from disk and executes the run_tests method
+
+duck.whitelist     - Lists all of the files that have been whitelisted
+
+duck.save          - Saves the current environment to the user home directory ~/.ducktestrc
+
+
+The following commands accept optional arguments.  Type the command followed by :help  Example: duck.run :help
+
+duck.run
+
+
+Type any command without arguments to display help
+
+duck.ar
+
+duck.latency
+
+duck.listen_speed
+
+duck.ll
+
+duck.speed
+
+'
+
+:ar: ! '
+
+Sets the ActiveRecord::Base logging level.  Valid values are: :debug, :error, :fatal, :info, :unknown, :warn
+
+Usage:
+
+duck.ar_loglevel [value]
+
+value - :debug, :error, :fatal, :info
+
+'
+
+:latency: ! '
+
+Sets the queue latency.  The queue latency is the amount of time that MUST PASS since the last queue event.  A queue event would be adding a file to the queue.
+
+Usage:
+
+duck.latency [value]
+
+value - any number including decimal point: 0.5, 0.75, 1, 1.5
+
+'
+
+:listen_speed: ! '
+
+Sets the listener speed.  The listener speed is the amount of time the listener loop will sleep inbetween polling for changes.
+
+Usage:
+
+duck.listen_speed [value]
+
+value - any number including decimal point: 0.5, 0.75, 1, 1.5
+
+'
+
+:ll: ! '
+
+Sets the logging level.  Valid values are: :debug, :error, :fatal, :info, :unknown, :warn
+
+Usage:
+
+duck.loglevel [value]
+
+value - :debug, :error, :fatal, :info
+
+'
+
+:run: ! '
+
+Manually runs test file(s).
+
+Usage:
+
+duck.run [value]
+
+value - a single file name or multiple file names separated by commas or spaces.
+
+'
+
+:speed: ! '
+
+Sets the queue speed.  The queue speed is the amount of time the queue loop will sleep inbetween polling for files being on the queue.
+
+Usage:
+
+duck.speed [value]
+
+value - any number including decimal point: 0.5, 0.75, 1, 1.5
+
+'

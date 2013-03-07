@@ -1,0 +1,811 @@
+# Logfile created on 2012-02-20 02:56:38 -0600 by logger.rb/31641
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/fixtures/books.yml
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/integration/bike_integration_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/integration/car_integration_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/integration/truckintegration_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/performance/bike_performance_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/performance/car_performance_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/performance/truck_performance_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/test01.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/test02.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/test03.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/test04.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/admin/admin_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/car_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/group_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/role_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/user_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/truck_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/app/controllers/bike_controller.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/truck_spec.rb
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/car_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/admin/admin_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/bike_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/car_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/group_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/role_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec/user_spec.rb
+    not set yet: find_runnable_files added: /alldata/rails/gems/duck_test/spec/testdir/spec/unit/truck_spec.rb
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 10
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 0
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 2
+    not set yet: Autorun is ON
+    not set yet: 
+==> preparing tests: 1
+    not set yet:   ==> running tests: 1
+    not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.466819 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.467162 #12341]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-11T09:59:15.467232 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.578049 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.581226 #12341]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-11T09:59:15.581386 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.665279 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.665406 #12341]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-11T09:59:15.665464 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.679457 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.711442 #12341]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-11T09:59:15.711649 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.811308 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.811478 #12341]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-11T09:59:15.811540 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.813647 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.814026 #12341]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-11T09:59:15.814126 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-11T09:59:15.900400 #12341]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-11T09:59:15.903761 #12341]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-11T09:59:15.903918 #12341]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.240999 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.244114 #15009]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T05:29:08.244283 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.365329 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.371468 #15009]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:29:08.371725 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.452595 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.452818 #15009]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:29:08.452942 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.455162 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.455342 #15009]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:29:08.455467 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.606687 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.606870 #15009]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:29:08.606939 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.608796 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.609100 #15009]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:29:08.609185 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:08.723585 #15009]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:08.729886 #15009]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:29:08.730095 #15009]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:37.569107 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:37.572191 #15028]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T05:29:37.572355 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:37.671691 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:37.706471 #15028]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:29:37.706699 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:37.823203 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:37.823489 #15028]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:29:37.823618 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:37.838420 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:37.841678 #15028]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:29:37.841835 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:37.930856 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:37.931278 #15028]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:29:37.931370 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:38.010802 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:38.010938 #15028]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:29:38.010997 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:29:38.090911 #15028]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:29:38.091097 #15028]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:29:38.091191 #15028]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.097480 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.097977 #15049]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:30:17.098091 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.183349 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.183550 #15049]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:30:17.183658 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.303148 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.309173 #15049]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:30:17.309379 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.423182 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.455470 #15049]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T05:30:17.455681 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.553144 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.553302 #15049]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:30:17.553366 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.554681 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.554804 #15049]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:30:17.554866 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:17.569142 #15049]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:17.572377 #15049]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:30:17.572530 #15049]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.416301 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.419486 #15067]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:30:53.419663 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.533043 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.538965 #15067]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T05:30:53.539182 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.652519 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.652816 #15067]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:30:53.652930 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.805402 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.808505 #15067]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:30:53.808650 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.883383 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.883854 #15067]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:30:53.883961 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.963988 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.964121 #15067]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:30:53.964180 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:30:53.981640 #15067]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:30:53.981769 #15067]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:30:53.981827 #15067]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.012289 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.015506 #15085]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:32:48.015692 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.102169 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.102998 #15085]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:32:48.103191 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.185426 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.185649 #15085]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:32:48.185763 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.249647 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.249822 #15085]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T05:32:48.249887 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.251057 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.251146 #15085]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T05:32:48.251203 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.335219 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.338843 #15085]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T05:32:48.339012 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T05:32:48.445945 #15085]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T05:32:48.449024 #15085]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T05:32:48.449128 #15085]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.507581 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.508003 #17007]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T09:41:27.508098 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.599345 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.599528 #17007]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T09:41:27.599622 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.601891 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.602066 #17007]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-03-12T09:41:27.602176 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.708731 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.708874 #17007]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-03-12T09:41:27.708930 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.751606 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.754852 #17007]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-03-12T09:41:27.754975 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.860266 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.867017 #17007]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T09:41:27.867232 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-03-12T09:41:27.982791 #17007]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-03-12T09:41:27.988950 #17007]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-03-12T09:41:27.989155 #17007]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.215837 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.216052 #11507]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T06:44:05.216120 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.218047 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.218384 #11507]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T06:44:05.218476 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.273825 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.276487 #11507]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-07-18T06:44:05.276602 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.320894 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.321017 #11507]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T06:44:05.321066 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.344140 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.347075 #11507]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T06:44:05.347258 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.394812 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.394942 #11507]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T06:44:05.395056 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T06:44:05.483320 #11507]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T06:44:05.485973 #11507]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T06:44:05.486151 #11507]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:05.966777 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:05.969356 #11773]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-07-18T07:01:05.969509 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.042581 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.042729 #11773]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T07:01:06.042797 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.065975 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.069098 #11773]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T07:01:06.069200 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.125830 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.125987 #11773]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T07:01:06.126048 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.221348 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.223964 #11773]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T07:01:06.224137 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.263830 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.264033 #11773]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T07:01:06.264139 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T07:01:06.268010 #11773]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T07:01:06.268692 #11773]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T07:01:06.268882 #11773]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:02.832075 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:02.834845 #13678]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T08:58:02.835002 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:02.875836 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:02.875987 #13678]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T08:58:02.876066 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:02.921144 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:02.921803 #13678]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-07-18T08:58:02.921976 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:02.984997 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:02.987689 #13678]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-07-18T08:58:02.987807 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:03.061687 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:03.064719 #13678]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-07-18T08:58:03.064948 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:03.189112 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:03.189416 #13678]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T08:58:03.189554 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-07-18T08:58:03.191827 #13678]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-07-18T08:58:03.191980 #13678]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-07-18T08:58:03.192096 #13678]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.514235 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.514794 #27353]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-11-30T18:20:07.514986 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.574075 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.585555 #27353]  INFO -- :     not set yet:   ==> running tests: 10
+I, [2012-11-30T18:20:07.585743 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.620743 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.621014 #27353]  INFO -- :     not set yet:   ==> running tests: 1
+I, [2012-11-30T18:20:07.621115 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.692468 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.692676 #27353]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-11-30T18:20:07.692785 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.718642 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.723582 #27353]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-11-30T18:20:07.723792 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.779207 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.791459 #27353]  INFO -- :     not set yet:   ==> running tests: 2
+I, [2012-11-30T18:20:07.791671 #27353]  INFO -- :     not set yet: Autorun is ON
+I, [2012-11-30T18:20:07.826598 #27353]  INFO -- :     not set yet: 
+==> preparing tests: 1
+I, [2012-11-30T18:20:07.826752 #27353]  INFO -- :     not set yet:   ==> running tests: 0
+I, [2012-11-30T18:20:07.826904 #27353]  INFO -- :     not set yet: Autorun is ON

@@ -1,0 +1,215 @@
+random brainstorming notes when I first starting toying with the idea of building this gem.
+
+Should be able to run the debugger from a test.
+
+potential idea to unload files
+http://www.ruby-forum.com/topic/121905
+
+# #  watch pattern: "**/*" do
+# #    map /^models/, /^bike/ do
+# #      target /^unit/, /^bike_spec.rb/
+# #      target /^functional/, /^bike_controller_spec.rb/
+# #    end
+# #  end
+
+
+DuckTest.config do
+
+  # would set global includes / excludes within the default framework
+  included /.rb$/
+  included_dirs /^unit/
+  excluded /.rb$/
+  excluded_dirs /^functional/
+
+  framework :rspec do
+
+    # would set global includes / excludes within the framework being defined
+    included /.rb$/
+    included_dirs /^unit/
+    excluded /.rb$/
+    excluded_dirs /^functional/
+
+    watch "**/*", included: /book/ do
+      # would set includes / excludes within the watch list being defined
+      included /.rb$/
+      included_dirs /^unit/
+      excluded /.rb$/
+      excluded_dirs /^functional/
+
+      app_watch "**/*", included: /book/ do
+        resolver /asdjajd/
+        resolver /asdjajd/
+      end
+
+    end
+
+  end
+
+end
+
+
+
+NOTES:
+- a rule is that there will be ONLY one runnable watchlist and allow multiple app watchlists.
+- object containing criteria, settings, etc. is considered a config object
+- directories are the source for config objects, however, directories and files in the common list will have a reference to the config object that created it.
+- a watch list is created in config/environments/test.rb config file using the watch statement
+  watch "**/*", /book/
+- non-runnable files that are watched are considered "app" files.
+  - a single statement creates a single watch list object.
+
+CONSOLE SESSION NOTE:
+- criteria for all watched directories / files is configured in config/environments/test.rb
+  - config data is loaded and kept in memory during the console session
+  - attempt to allow adding / removing criteria via the console and do a full reload including stopping all of the watched directories, etc. ??
+
+use a pattern to get a list of files and directories.
+
+  - traverse the list
+    NOTE: directories and files have separate included / excluded regexp arrays.
+    - match the directory or file against the included / excluded regexp arrays.
+      - if directory / file should be watched
+        - the directory / file gets added to the actual watch notifier to receive messages about changes.
+        - the directory / file gets added to a common lookup list for easy lookup later with a reference back
+          to the object config object.
+
+      - else, directories / files that do not match get blacklisted right away
+
+when a file is deleted:
+  - for now, do nothing.
+
+when a file is created / moved into the directory:
+  - should be able to follow the same logic and call the same method as for changes, however,
+    DO NOT autorun the file.  everything else.
+
+when a file changes:
+
+  - if -> is it blacklisted?
+    yes
+    - ignore it
+
+  - elsif -> is it whitelisted and runnable?
+    yes
+    - run it
+
+  - elsif -> is it whitelisted and NON-runnable?
+    - can it be resolved to a runnable set of files?
+      yes
+      - run those files
+
+      no
+      - do nothing
+
+  - else
+    - if we have a file that has changed and was not previously on the whitelist, then,
+      the event must have been triggered due to some other action such as after being created or being moved to the containing directory.
+
+      - current file parent object exist and is the parent watchable?
+        yes
+        - whitelist the file with the config object attached
+
+        # parent object will always be a directory, therefore, NEVER runnable.
+        - can file_spec be resolved to a runnable set of files?
+          yes
+          - run those files
+
+        no
+        - blacklist the file due to no parent
+
+  - else
+    - blacklist the file
+
+when a directory changes:
+  - could be a subdirectory is added, etc.
+  - lookup the criteria of the parent directory and match against the directory
+    - if match
+      - add to the common list as normal with a reference back to the object containing the criteria that allowed the directory to be included.
+        In this case, it should be the parent directory found during the lookup.
+
+
+let's say this was the app file that changed.
+how would i resolve the associated test?
+rails does follow convention, however, that does mean all developers will follow it.
+
+# /alldata/rails/gems/duck_test/spec/testdir/app/app01.rb
+
+# this might get very complicated !!!!
+resolving link between non-runnable and runnable files:
+  - a config object is needed for this process
+  - break the full file spec into pieces
+
+    /alldata/rails/gems/duck_test/spec/testdir/app/app01.rb
+
+    | root                                      |  watch directory  | subdir        | file name
+    /alldata/rails/gems/duck_test/spec/testdir  /  app              /               / app01.rb
+
+    # source file
+    /alldata/rails/gems/duck_test/spec/testdir  /  app              /models         / bike.rb
+
+    sub dir mappings
+
+    /alldata/rails/gems/duck_test/spec/testdir/models/bike.rb
+
+    /^models/   -> /^bike/  mapped to --> [
+                                            unit             => /^bike_spec.rb/,
+                                            functional       => /^bike_controller_spec.rb/
+                                          ]
+
+    /^models/   -> /^(.+)/  mapped to --> [
+                                            unit             => /^bike_spec.rb/,
+                                            functional       => /^bike_controller_spec.rb/
+                                          ]
+
+
+    models      -> [unit        => [/^bike_spec/, /^car/, /^truck/],
+                    functional  => [/^bike/, /^car/, /^truck/]
+                    ]
+
+    controllers -> [functional]
+
+
+    # mapped to
+    /alldata/rails/gems/duck_test/spec/testdir  /  spec             / unit          / bike_spec.rb
+    /alldata/rails/gems/duck_test/spec/testdir  /  spec             / functional    / bike_controller_spec.rb
+
+    - note: the runnable watch list is considered the target watchlist in this context.
+
+    - the first task would be find target director(ies)y within the target watchlist.
+      the goal is to build a list of target directories.
+
+      - if the changed file HAS a subdirectory
+        - extract the subdirectory
+        - build a list of translation directories
+
+          # this would be the default order of precedence
+          # i should make the order of precedence configurable
+          - first, add the sub-directory
+          - then, add translation directories attached to the config object
+          - then, add global translation directories
+
+          - the translations will be an array of Strings or regexp's
+
+        - search the target watch list for a subdirectory(ies) matching the translation directory(ies).
+          - there should be a switch that says match first or match all.  this should facilitate the ability
+            to trigger multiple tests when a single file changes.  for instance, when I change model I might
+            want it to run the unit tests and the functional tests as well.
+
+      - if there is no sub directory, then, the root of the runnable watch list is the target directory.
+        - add the watch directory root to the list of directories to search.
+
+      - at this point, we should have a list of target directories to search for matching files.
+
+      # i will not recursively search thru the subdirectories.  this compares the file names ONLY.
+      - loop thru each of the directory(ies)
+
+        # this step requires IO with the disk which will create a little bit of a performance issue, but, worth it.
+        - grab a list of the files contained within the directory
+
+          # each file will have a set of filters used to resolve links between non-runnable and runnable files.
+          # basically, it is an array of regexp's PAIRS
+          - loop thru all of the regexp pairs and compare the first regexp against the source file (non-runnable file that changed)
+            - if the regexp matches
+              - loop thru the files contained in the directory
+                - compare the second regexp in the pair against the target file
+                  - if regexp matches
+                    - add to list of runnable files that should be executed.

@@ -1,0 +1,431 @@
+require 'fileutils'
+
+class TestFiles
+
+  ##################################################################################
+  # the base or root directory for the set of test directories / files
+  def self.base_dir
+    return "#{File.expand_path(File.dirname(__FILE__))}/testapp"
+  end
+
+  ##################################################################################
+  # The actual set of test directories / files
+  def self.files
+    return [
+      {dir: ["spec"],                           files: ["test01.rb", "test02.rb", "test03.rb", "test04.rb"]},
+      {dir: ["spec", "unit"],                   files: ["truck_spec.rb", "car_spec.rb", "bike_spec.rb"]},
+      {dir: ["spec", "unit", "sec"],            files: ["user_spec.rb", "role_spec.rb", "group_spec.rb"]},
+      {dir: ["spec", "unit", "admin"],          files: ["admin_spec.rb"]},
+      {dir: ["spec", "functional"],             files: ["truck_controller_spec.rb", "car_controller_spec.rb", "bike_controller_spec.rb"]},
+      {dir: ["spec", "fixtures"],               files: ["books.yml"]},
+      {dir: ["spec", "integration"],            files: ["truckintegration_spec.rb", "car_integration_spec.rb", "bike_integration_spec.rb"]},
+      {dir: ["spec", "performance"],            files: ["truck_performance_spec.rb", "car_performance_spec.rb", "bike_performance_spec.rb"]},
+      {dir: ["app"],                            files: ["app01.rb", "app02.rb", "app03.rb", "app04.rb"]},
+      {dir: ["app", "controllers"],             files: ["truck_controller.rb", "car_controller.rb", "bike_controller.rb"]},
+      {dir: ["app", "models"],                  files: ["truck.rb", "car.rb", "bike.rb"]},
+      {dir: ["app", "views"],                   files: []},
+      {dir: ["app", "views", "bikes"],          files: ["index.html.erb", "show.html.erb", "edit.html.erb", "new.html.erb"]},
+      {dir: ["app", "views", "cars"],           files: ["index.html.erb", "show.html.erb", "edit.html.erb", "new.html.erb"]},
+      {dir: ["app", "views", "trucks"],         files: ["index.html.erb", "show.html.erb", "edit.html.erb", "new.html.erb"]}
+            ]
+  end
+
+  ##################################################################################
+  # builds the entire directory / file structure in the form of a list.  each item is a full file spec.
+  def self.file_list
+    list = []
+    self.files.each do |item|
+      item[:files].each {|file| list.push(File.join(self.base_dir, item[:dir], file))}
+    end
+    return list
+  end
+
+  ###################################################################################
+  ## compares the expected set of directories / files against what is on disk
+  #def self.prepared?
+    #value = true
+    #self.file_list.each {|file| value = File.exist?(file) ? value : false}
+    #return value
+  #end
+
+  ##################################################################################
+  # removes all of the test directories / files
+  def self.clean
+puts self.base_dir
+    #if File.exist?(self.base_dir)
+      #puts "Removing test files and directories..."
+      #FileUtils.rm_r self.base_dir
+      #puts "Done."
+    #else
+      #puts "Nothing to clean..."
+    #end
+  end
+
+  ##################################################################################
+  # generates all of the test directories / files
+  def self.setup
+    self.clean
+    #self.dir_list.each {|dir| FileUtils.mkdir_p dir}
+    #FileUtils.touch self.file_list
+    #puts "\r\n\r\n"
+    #puts self.file_list
+    #puts "\r\n\r\nThe above files have been created.\r\n\r\n"
+  end
+
+  ##################################################################################
+  # similar to self.file_list, however, returns directories ONLY.  each item is a full file spec.
+  def self.dir_list
+    list = []
+    self.files.each do |item|
+      list.push(File.join(self.base_dir, item[:dir]))
+    end
+    return list
+  end
+
+  ##################################################################################
+  #   puts TestFiles.find_dirs(dir: :spec, full: false)
+  #   spec
+  #   spec/unit
+  #   spec/unit/sec
+  #   spec/unit/admin
+  #   spec/functional
+  #   spec/fixtures
+  #   spec/integration
+  #   spec/performance
+  #
+  #   puts TestFiles.find_dirs(dir: :spec, excluded: :unit, full: true)
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/unit/sec
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/unit/admin
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/functional
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/fixtures
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/integration
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/performance
+  #
+  #   puts TestFiles.find_dirs(dir: :spec, excluded: [[:unit, :sec]], full: true)
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/unit
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/unit/admin
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/functional
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/fixtures
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/integration
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/performance
+  #
+  #   puts TestFiles.find_dirs(dir: :spec, excluded: /^unit/, full: true)
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/functional
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/fixtures
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/integration
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/performance
+  #
+  # options
+  # dir - compared against the first item of dir: for each of self.files
+  # excluded - directories to exclude from the result.  can be a single or an array of Symbols, Strings, Regexps
+  # path - :full   returns the full file spec including self.base_dir
+  #      - :path   the directory path
+  # type - :path   returns a full path spec /alldata/rails/gems/duck_test/spec
+  #      - :array  returns the dir: array from the hash for the item
+  #      - :hash   returns the dir: hash for the item
+  def self.find_dirs(options = {})
+    config = {dir: "", excluded: [], path: :path, type: :path}.merge(options)
+    list = []
+    excluded = config[:excluded].kind_of?(Symbol) || config[:excluded].kind_of?(String) || config[:excluded].kind_of?(Regexp) ? [config[:excluded]] : config[:excluded]
+    config[:dir] = "all" if config[:dir].blank?
+
+    config[:pattern] = config[:pattern].kind_of?(String) || config[:pattern].kind_of?(Symbol) || config[:pattern].kind_of?(Regexp) ? [config[:pattern]] : config[:pattern]
+    config[:pattern] = config[:pattern].blank? ? [:all] : config[:pattern]
+    config[:pattern].each_with_index {|item, index| config[:pattern][index] = item.to_s if item.kind_of?(Symbol)}
+
+    self.files.each do |item|
+      if item[:dir].first.eql?(config[:dir].to_s) || config[:dir].eql?("all")
+
+        included = true
+
+        path = item[:dir].dup
+        path.shift
+        path = path.join("/")
+
+        excluded.each do |exp|
+
+          if (exp.kind_of?(String) || exp.kind_of?(Symbol)) && path.eql?(exp.to_s)
+            included = false
+            break
+
+          elsif exp.kind_of?(Array) && path.eql?(exp.join("/"))
+            included = false
+            break
+
+          elsif exp.kind_of?(Regexp) && path =~ exp
+            included = false
+            break
+            
+          end
+
+        end
+
+        if included
+
+          included = false
+          if config[:pattern].length > 0 && config[:pattern].first.eql?("all")
+            included = true
+          else
+
+            config[:pattern].each do |pattern|
+
+              if pattern.kind_of?(String)
+                if path.eql?(pattern)
+                  included = true
+                  break
+                end
+
+              elsif pattern.kind_of?(Regexp)
+                if path =~ pattern
+                  included = true
+                  break
+                end
+
+              end
+
+            end
+
+          end
+
+          if included
+            if config[:type].eql?(:path)
+              if config[:path].eql?(:full)
+                list.push(File.join(self.base_dir, item[:dir]))
+              else
+                list.push(File.join(item[:dir]))
+              end
+
+            elsif config[:type].eql?(:array)
+              list.push(item[:dir])
+
+            elsif config[:type].eql?(:hash)
+              list.push(item)
+
+            end
+          end
+
+        end
+
+      end
+    end
+
+    return list
+  end
+
+  ##################################################################################
+  # first, calls self.find_dirs to get a set of directory hashes from self.files
+  #
+  #   puts TestFiles.find_files(dirs: {dir: :spec, excluded: /^unit/}, pattern: /^bike/, path: :full)
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/functional/bike_controller_spec.rb
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/integration/bike_integration_spec.rb
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/performance/bike_performance_spec.rb
+  #
+  #   puts TestFiles.find_files(dirs: {dir: :spec, excluded: /^unit/}, pattern: /^bike/, path: :path)
+  #   spec/functional/bike_controller_spec.rb
+  #   spec/integration/bike_integration_spec.rb
+  #   spec/performance/bike_performance_spec.rb
+  #
+  #   puts TestFiles.find_files(dirs: {dir: :spec, excluded: /^unit/}, pattern: /^bike/, path: :file)
+  #   bike_controller_spec.rb
+  #   bike_integration_spec.rb
+  #   bike_performance_spec.rb
+  #
+  # options
+  # dirs:  {}  A hash containing all of the values usually passed to self.find_dirs
+  # 
+  # pattern - A set of patterns to compare against each file_spec. can be a single or an array of Symbols, Strings, Regexps
+  #           omit pattern or set it to :all to return all files.
+  # path - :full   returns the full file spec including self.base_dir
+  #      - :path   the directory path
+  #      - :file   the file_spec (file_name) ONLY
+  def self.find_files(options = {})
+    config = {excluded: [], path: :path}.merge(options)
+    dir_config = config.delete(:dirs)
+    dir_config[:path] = :path
+    dir_config[:type] = :hash
+    list = []
+
+    config[:pattern] = config[:pattern].kind_of?(String) || config[:pattern].kind_of?(Symbol) || config[:pattern].kind_of?(Regexp) ? [config[:pattern]] : config[:pattern]
+    config[:pattern] = config[:pattern].blank? ? [:all] : config[:pattern]
+    config[:pattern].each_with_index {|item, index| config[:pattern][index] = item.to_s if item.kind_of?(Symbol)}
+
+    dirs = self.find_dirs(dir_config)
+    dirs.each do |dir|
+
+      dir[:files].each do |file_spec|
+
+        if config[:pattern].length > 0 && config[:pattern].first.eql?("all")
+          if config[:path].eql?(:full)
+            list.push(File.join(self.base_dir, dir[:dir], file_spec))
+
+          elsif config[:path].eql?(:path)
+            list.push(File.join(dir[:dir], file_spec))
+
+          else
+            list.push(file_spec)
+
+          end
+
+        else
+          config[:pattern].each do |pattern|
+
+            if pattern.kind_of?(String)
+              if file_spec.eql?(pattern)
+                if config[:path].eql?(:full)
+                  list.push(File.join(self.base_dir, dir[:dir], file_spec))
+
+                elsif config[:path].eql?(:path)
+                  list.push(File.join(dir[:dir], file_spec))
+
+                else
+                  list.push(file_spec)
+
+                end
+              end
+
+            elsif pattern.kind_of?(Regexp)
+              if file_spec =~ pattern
+                if config[:path].eql?(:full)
+                  list.push(File.join(self.base_dir, dir[:dir], file_spec))
+
+                elsif config[:path].eql?(:path)
+                  list.push(File.join(dir[:dir], file_spec))
+
+                else
+                  list.push(file_spec)
+
+                end
+              end
+
+            end
+
+          end
+        end
+
+      end
+    end
+
+    return list
+  end
+
+  ##################################################################################
+  # searches self.files for a single file_spec
+  #
+  #   puts TestFiles.file_spec("truck_controller_spec", path: :full)
+  #   /alldata/rails/gems/duck_test/spec/testdir/spec/functional/truck_controller_spec.rb
+  #
+  #   puts TestFiles.file_spec("truck_controller_spec", path: :path)
+  #   spec/functional/truck_controller_spec.rb
+  #
+  #   puts TestFiles.file_spec("truck_controller_spec", path: :file)
+  #   truck_controller_spec.rb
+  #
+  # file_spec - the file name to find
+  # options
+  # path - :full   returns the full file spec including self.base_dir
+  #      - :path   the directory path
+  #      - :file   the file_spec (file_name) ONLY
+  # returns String
+  def self.file_spec(file_spec, options = {})
+    config = {path: :full}.merge(options)
+    value = ""
+
+    files.each do |item|
+
+      item[:files].each do |file_name|
+
+        if file_name.eql?(file_spec) || file_name =~ /#{file_spec}.rb/
+
+          if config[:path].eql?(:full)
+            value = File.join(self.base_dir, item[:dir], file_name)
+
+          elsif config[:path].eql?(:path)
+            value = File.join(item[:dir], file_name)
+
+          else
+            value = file_name
+
+          end
+
+          break
+
+        end
+
+      end
+
+    end
+
+    return value
+  end
+
+  ##################################################################################
+  # conveienence wrapper for find files that imposes :spec as the directory
+  def self.spec_files(options = {})
+    config = {}.merge(options)
+    config[:dirs] = {} unless config[:dirs].kind_of?(Hash)
+    config[:dirs][:dir] = :spec if config[:dirs]
+    return self.find_files(config)
+  end
+
+  ##################################################################################
+  # conveienence wrapper for find files that imposes :app as the directory
+  def self.app_files(dirs = [], options = {})
+    config = {}.merge(options)
+    config[:dirs] = {} unless config[:dirs].kind_of?(Hash)
+    config[:dirs][:dir] = :app if config[:dirs]
+    return self.find_files(config)
+  end
+
+  ##################################################################################
+  def self.dir(pattern)
+    list = []
+    if pattern.kind_of?(String)
+      list.push(File.join(self.base_dir, pattern))
+    elsif pattern.kind_of?(Array)
+      pattern.each do |item|
+        list.push(File.join(self.base_dir, item))
+      end
+    end
+
+    return Dir.glob(list)
+  end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+#!/usr/local/bin/ruby
+
+require 'rubygems'
+
+version = ">= 0"
+
+if ARGV.first =~ /^_(.*)_$/ and Gem::Version.correct? $1 then
+  version = $1
+  ARGV.shift
+end
+
+# get a list of all arguments passed on the CLI that DO NOT begin with a hyphen
+values = ARGV.find_all {|item| !item.match(/^-/)}
+
+# remove any arguments that DO NOT exist in the args array
+args = %w(c development production test)
+values.delete_if {|arg| args.include?(arg)}
+
+# the remaining arguments should be arguments that are NOT SUPPORTED via the console, however,
+# are useful for ducktest.  Save them for later use.
+if ENV["DUCK_TEST"].nil? || ENV["DUCK_TEST"].empty?
+  ENV["DUCK_TEST"] = values.first
+end
+
+# now, remove them from the CLI args so the console doesn't puke...
+ARGV.delete_if {|arg| values.include?(arg)}
+
+gem 'rails', version
+load Gem.bin_path('rails', 'rails', version)

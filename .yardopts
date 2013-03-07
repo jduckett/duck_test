@@ -1,0 +1,16 @@
+--exclude lib/duck_test/version.rb
+--exclude lib/duck_test/frame_work/rspec/base.rb
+--exclude lib/duck_test/frame_work/test_unit/base.rb
+--exclude lib/duck_test/platforms/base.rb
+--exclude lib/duck_test/platforms/generic/base.rb
+--exclude lib/duck_test/platforms/linux/base.rb
+--exclude lib/duck_test/platforms/mac/base.rb
+--exclude lib/duck_test/platforms/windows/base.rb
+--no-private
+--no-cache
+lib/duck_test/**/*.rb
+-
+README.md
+FILTERS.md
+MAPS.md
+License.txt
