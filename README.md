@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/jduckett01/duck_test.png?branch=master)](http://travis-ci.org/jduckett01/duck_test)
+
 **Homepage**:       [http://jeffduckett.com](http://jeffduckett.com)
 
 **Git**:            [http://github.com/jduckett01/duck_test](http://github.com/jduckett01/duck_test)
