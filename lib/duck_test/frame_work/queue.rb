@@ -64,12 +64,12 @@ module DuckTest
 
         self.force_run = false
         self.last_queue_event = Time.now
-        self.latency = 0.65
+        self.latency = 1 #0.65
         self.lock = Mutex.new
         self.queue = []
         self.queue_event_block = nil
         self.queue_event_lock = Mutex.new
-        self.speed = 0.65 #25
+        self.speed = 1 #0.65 #25
         self.stop = false
         self.total_ran = 0
 

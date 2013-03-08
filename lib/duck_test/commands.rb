@@ -12,6 +12,11 @@ module DuckTest
     end
 
     ##################################################################################
+    def help
+      return self.to_s
+    end
+
+    ##################################################################################
     # Displays standard usage details
     def to_s
       usage(:usage, true)

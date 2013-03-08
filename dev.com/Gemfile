@@ -22,6 +22,6 @@ group :test do
   gem 'duck_test', :path => File.expand_path("#{File.dirname(__FILE__)}/../")
   gem 'minitest'
   gem 'rb-inotify'
-  gem 'rspec'
-  gem 'rspec-rails'
+  #gem 'rspec'
+  #gem 'rspec-rails'
 end

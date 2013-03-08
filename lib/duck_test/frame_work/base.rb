@@ -555,7 +555,7 @@ module DuckTest
 
           self.listener.start
           
-          ducklog.console "For help, type: 'duck' at the command prompt"
+          ducklog.console "For help, type: 'duck.help' at the command prompt"
 
         end
 
