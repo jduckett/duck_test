@@ -1,10 +1,10 @@
-[![Build Status](https://secure.travis-ci.org/jduckett01/duck_test.png?branch=master)](http://travis-ci.org/jduckett01/duck_test)
+[![Build Status](https://secure.travis-ci.org/jduckett/duck_test.png?branch=master)](http://travis-ci.org/jduckett/duck_test)
 
 **Homepage**:       [http://jeffduckett.com](http://jeffduckett.com)
 
-**Git**:            [http://github.com/jduckett01/duck_test](http://github.com/jduckett01/duck_test)
+**Git**:            [http://github.com/jduckett/duck_test](http://github.com/jduckett/duck_test)
 
-**Documentation**:  [http://rubydoc.info/github/jduckett01/duck_test/frames](http://rubydoc.info/github/jduckett01/duck_test/frames)
+**Documentation**:  [http://rubydoc.info/github/jduckett/duck_test/frames](http://rubydoc.info/github/jduckett/duck_test/frames)
 
 **Author**:         Jeff Duckett
 
