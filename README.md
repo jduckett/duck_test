@@ -15,6 +15,10 @@
 # Duck Test
 Duck Test facilitates running tests within the Rails IRB console.
 
+# Update
+
+I am officially dropping support for this repo as I am moving away from Rails.  Anybody want it?
+
 # Overview
 Running tests are essential to solid application development and the standard Rails mechanism for running tests does a fine job.  However, as the Rails framework has matured
 coupled with the plethora of gems available to developers the start up of the Rails environment can increase to a point that can make TDD a bit painful.  Ducktest runs within
